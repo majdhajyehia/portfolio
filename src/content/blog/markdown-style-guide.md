@@ -1,110 +1,18 @@
 ---
-title: "Let's become a super hero in data structures!"
-description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-pubDate: "Apr 25 2023"
-heroImage: "/placeholder-hero.jpg"
+title: Let's become a super hero in data structures!
+description: Here is a sample of some basic Markdown syntax that can be used
+  when writing Markdown content in Astro.
+pubDate: Apr 25 2023
+publishDate: 2023-04-25T16:16:46.096Z
+heroImage: /placeholder-hero.jpg
 ---
-
-If you're one of those geeks interested in coding interviews and jobs in big tech companies you've probably heard about data structures before.
-
-## Headings
-
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
-*Italic* **Bold**
-
-# H1
-
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
-###### H6
-
-## Paragraph
-
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-
-## Images
-
-![This is a placeholder image description](/placeholder-social.jpg)
-
-## Blockquotes
-
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-#### Blockquote without attribution
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-
-#### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-<!-- 
-## Tables
-
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` | -->
-
-## Code Blocks
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-
-## List Types
-
-#### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-#### Unordered List
-
-- List item
-- Another item
-- And another item
-
-#### Nested list
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-
-$$\begin{aligned}x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}\end{aligned}$$
+If you're one of those geeks interested in coding interviews and jobs in big tech companies, you probably have heard about data structures before. Data structures are often implemented using classes or primitives in programming languages to organize and store data efficiently. They are fundamental concepts in computer science and are essential for solving complex problems efficiently. In this blog post, we will explore some of the most important data structures, their use cases, and how they can be implemented in Python. Whether you're a beginner or an experienced developer, this post will provide you with a solid foundation to understand data structures and their role in computer science. So, let's dive in!
+So first let's list all data structures we're going to discuss in this post:
+- Arrays
+- Linked Lists (Including doubly linked lists).
+- Queue
+- Stack
+- Trees
+- Graphs (Only basic stuff).
+- Hash Tables.
+- Heaps.
