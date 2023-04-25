@@ -23,7 +23,7 @@ In computer science, an array is a linear data structure that stores a collectio
 So first, how do we know we need to use an array here? The critical part here is the part we're asked to print all ten numbers after all of them have been received. If we dropped this part we could do something similar to this:
 1. Define a variable called `sum`
 2. Increment the value of `sum` by each number received.
-3. Print `sum/10` to the screen.
+3. Print `sum/10` to the screen.\
 We've been asked to print all ten numbers though, how could we make the program remember all numbers? Well, we'll need something that can store all those numbers so we can come back to them in the end and print each one of them to the screen.
 The most basic thing that gives all those features with good efficiency is an array. The solution to the problem could be as follows:
 1. Declare an array that will hold 10 integers, and an integer variable that will hold the sum of the numbers.
