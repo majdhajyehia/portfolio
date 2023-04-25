@@ -12,8 +12,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <html lang="en">
 	<head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" crossorigin="anonymous">
 		<BaseHead title={title} description={description} />
-		<style>
+		<style is:global>
 			.title {
 				font-size: 2em;
 				margin: 0.25em 0 0;
@@ -25,24 +26,107 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+            main img{
+                margin: 50px auto;
+            }
+            main blockquote {
+                background-color: #9b9eff;
+                border-radius: 15px;
+                padding: 20px;
+                padding-left: 40px;
+                margin: 25px 0;
+                position: relative;
+                overflow: hidden;
+                border: 0;
+            }
+            main blockquote, main blockquote * {
+                color: #333 !important;
+            }
+            main blockquote::before{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 20px;
+                background-color: #6366f1;
+                display: block;
+                content: '';
+            }
+            main table th, main table td{
+                padding: 15px;
+            }
+            main table {
+                margin: 30px 0;
+                background-color: #b7b9ff;
+                border-collapse: collapse;
+                border-radius: 8px;
+                border-style: hidden;
+            }
+            main table thead, main table th{
+                background-color: #6366f1;
+                color: #fff !important;
+            }
+            main{
+                line-height: 2;
+            }
+            main .math {
+                display: inline-block;
+                margin: 10px 0;
+            }
+            main .astro-code{
+                margin: 20px 0;
+                border-radius: 15px;
+            }
+            main h1, main h2, main h3, main h4, main h5, main h6 {
+                color: #6366f1;
+            }
+            main code{
+                background-color: #6366f1;
+                border-radius: 10px;
+            }
+            main .astro-code code {
+                background-color: initial;
+            }
+            main mark {
+                padding: 3px;
+                background-color: #9b9eff;
+                border-radius: 5px;
+            }
+            main hr {
+                border-top: 3px solid #6366f1;
+            }
+            main em, main b, main strong {
+                color: #9b9eff;
+            }
+            main table, main table * {
+                color: #6366f1 !important;
+            }
+            main table code {
+                color: #fff !important;
+            }
 		</style>
 	</head>
 
-	<body>
+	<body class="dark:bg-slate-900">
 		<Header />
-		<main>
-			<article>
-				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-				<h1 class="title">{title}</h1>
-				<FormattedDate date={pubDate} />
-				{
-					updatedDate && (
-						<div class="last-updated-on">
-							Last updated on <FormattedDate date={updatedDate} />
-						</div>
-					)
-				}
-				<hr />
+		<main class="p-20 max-w-7xl m-auto">
+			<article class="p-16 pt-0 text-indigo-300 text-1xl">
+				<h1 class="title mb-2 dark:text-indigo-500 font-bold text-4xl">{title}</h1>
+				<div class="text-indigo-500 font-bold">
+                    Written on <strong class="text-indigo-200 font-light">
+                        <FormattedDate date={pubDate} />
+                    </strong>By
+                    <strong class="text-indigo-200 font-light">Majd Haj Yehia</strong>
+                    {
+                        updatedDate && (
+                            <div class="last-updated-on">
+                                Last updated on <FormattedDate date={updatedDate} />
+                            </div>
+                        )
+                    }
+                </div>
+				{heroImage && <img width={1000} src={heroImage} alt="" />}
+                <hr class="mb-10" />
 				<slot />
 			</article>
 		</main>

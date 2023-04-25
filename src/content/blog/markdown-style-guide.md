@@ -1,15 +1,16 @@
 ---
-title: "Markdown Style Guide"
+title: "Let's become a super hero in data structures!"
 description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-pubDate: "Jul 01 2022"
+pubDate: "Apr 25 2023"
 heroImage: "/placeholder-hero.jpg"
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+If you're one of those geeks interested in coding interviews and jobs in big tech companies you've probably heard about data structures before.
 
 ## Headings
 
 The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+*Italic* **Bold**
 
 # H1
 
@@ -48,12 +49,12 @@ The blockquote element represents content that is quoted from another source, op
 > — <cite>Rob Pike[^1]</cite>
 
 [^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
+<!-- 
 ## Tables
 
 | Italics   | Bold     | Code   |
 | --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
+| _italics_ | **bold** | `code` | -->
 
 ## Code Blocks
 
@@ -105,3 +106,5 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+$$\begin{aligned}x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}\end{aligned}$$
