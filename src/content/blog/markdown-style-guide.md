@@ -20,6 +20,7 @@ So first let's list all the data structures we're going to discuss in this post:
 In computer science, an array is a linear data structure that stores a collection of values, those values are typically of the same data type. In programming languages like `C#`, `C++`, `Java` or other programming languages arrays have a fixed size that is given to the compiler at compilation time, this size cannot be modified during Run-Time. Similarly, the data type of the values that the array can store is fixed at compilation and cannot be modified later. Arrays give us the ability to iterate over elements in a linear manner and access any values at any given index in an efficient way, the time at which we can access a value by its index is constant.
  Let's take a look at a very basic problem which can be used using arrays:
 > Write a program that receives **10 integers** from the user. In the end, the program should print all ten numbers and their average.
+
 So first, how do we know we need to use an array here? The critical part here is the part we're asked to print all ten numbers after all of them have been received. If we dropped this part we could do something similar to this:
 1. Define a variable called `sum`
 2. Increment the value of `sum` by each number received.
